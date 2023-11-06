@@ -1,26 +1,40 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+
+<loichao msg="Day la components loi chao nhe"/>
+<hello id='linkhello' msg="Click vào !!! đến trang login"/>
+<button1 buttonText="NUT BUTTON"></button1>
+<!-- <jwplayer></jwplayer> -->
+<br>
+<bodemso></bodemso>
+<!-- <sotapid></sotapid> -->
+<h1> Đây là test VIDEOJS</h1>
+<!-- <changevideojs></changevideojs> -->
+<playerVideojsOp></playerVideojsOp>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import hello from './components/hello.vue'
+import loichao from './components/loichao.vue'
+//import jwplayer from './components/jwplayer.vue'
+import button1 from './components/button.vue'
+import bodemso from './components/bodemso.vue'
+//import sotapid from './components/id-sotap-nutPlay.vue'
+//import videojs from './components/videojs.vue'
+//import changevideojs from './components/button_change_videojs.vue'
+import playerVideojsOp from './components/playerVideojs.op.vue'
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+    name: 'App',
+    components: {
+        hello,
+        loichao,
+        //jwplayer,
+        button1,
+        bodemso,
+        //sotapid,
+       // videojs
+        //changevideojs,
+        playerVideojsOp
+    }
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
