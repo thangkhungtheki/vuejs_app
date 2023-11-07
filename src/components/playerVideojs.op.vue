@@ -30,7 +30,7 @@
             height: 360,
             sources: [
                         {
-                            src: 'png/output.m3u8',
+                            src: 'output.m3u8',
                             type: 'application/x-mpegURL'
                         }
                     ],
