@@ -9,7 +9,7 @@
 <!-- <sotapid></sotapid> -->
 <h1> Đây là test VIDEOJS</h1>
 <!-- <changevideojs></changevideojs> -->
-<playerVideojsOp></playerVideojsOp>
+<jwplayer></jwplayer>
 </template>
 
 <script>
@@ -21,7 +21,7 @@ import bodemso from './components/bodemso.vue'
 //import sotapid from './components/id-sotap-nutPlay.vue'
 //import videojs from './components/videojs.vue'
 //import changevideojs from './components/button_change_videojs.vue'
-import playerVideojsOp from './components/playerVideojs.op.vue'
+import jwplayer from './components/jwplayer.op.vue'
 
 export default {
     name: 'App',
@@ -34,7 +34,8 @@ export default {
         //sotapid,
        // videojs
         //changevideojs,
-        playerVideojsOp
+        // playerVideojsOp
+        jwplayer
     }
 }
 </script>
