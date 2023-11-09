@@ -30,11 +30,11 @@
             height: 360,
             sources: [
                         {
-                            src: 'png/output.m3u8',
+                            src: 'pngs/output.m3u8',
                             type: 'application/x-mpegURL'
                         }
                     ],
-            poster: 'png/1080x1088.jpg',
+            poster: 'pngs/1920x1080.png',
         }
       };
     },
@@ -59,11 +59,11 @@
                 height: 360,
                 sources: [
                             {
-                                src: 'png/test1.m3u8',
+                                src: 'pngs/test.m3u8',
                                 type: 'application/x-mpegURL'
                             }
                         ],
-                poster: 'png/1080x1088.jpg',
+                poster: 'pngs/1920x1080.png',
             }
             
           }
