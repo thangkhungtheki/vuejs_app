@@ -8,6 +8,7 @@
   </template>
   
   <script>
+  const _ip = process.env.VUE_APP_IP
   import VideoPlayer from './playerVideojsByAI.vue';
   // import videojs from 'video.js';
   // import Vue from 'vue';
