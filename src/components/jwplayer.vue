@@ -19,7 +19,10 @@
           default() {
             return {};
           },
-        },
+      },
+      logo: {
+      type: String,   
+      },
 
     },
     data() {
@@ -34,6 +37,11 @@
       this.player = jwplayer(playerElement);
       const playerOptions = {
         file: this.videoSrc,
+        logo: {
+          file: this.logo,
+          hide: false, // Để hiển thị logo
+          position: 'bottom-right', // Điều chỉnh vị trí của logo
+        },
         ... this.options,
         
       }
@@ -47,9 +55,27 @@
       this.player.setup(playerOptions)
     },
     watch: {
-      options() {
+      // options() {
+      //   const playerOptions = {
+      //   file: this.videoSrc,
+      //   logo: {
+      //     file: this.logo,
+      //     hide: false, // Để hiển thị logo
+      //     position: 'bottom-right', // Điều chỉnh vị trí của logo
+      //   },
+      //   ... this.options,
+        
+      // }
+      //   this.player.setup(playerOptions)
+      // }
+      videoSrc(){
         const playerOptions = {
         file: this.videoSrc,
+        logo: {
+          file: this.logo,
+          hide: false, // Để hiển thị logo
+          position: 'bottom-right', // Điều chỉnh vị trí của logo
+        },
         ... this.options,
         
       }

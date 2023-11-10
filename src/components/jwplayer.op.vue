@@ -4,7 +4,7 @@
       <input v-model="idfilm" type="text" placeholder="ID Film" />
       <button @click="handleButtonClick">nhấn vào Play</button>
     </div>
-    <jwplayer :options = 'jwoptions' :videoSrc="yourVideoSource"></jwplayer>
+    <jwplayer :options = 'jwoptions' :videoSrc="yourVideoSource" :logo="yourLogoPath"></jwplayer>
     
   </template>
   
@@ -19,6 +19,7 @@
         sotap: "94364",
         idfilm: "4931",
         yourVideoSource: 'pngs/output.m3u8',
+        yourLogoPath: 'logo.png',
         jwoptions: {
           //file: 'pngs/output.m3u8',
           heigh: 360,
