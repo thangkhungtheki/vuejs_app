@@ -11,8 +11,16 @@
         type: Object,
         default() {
           return {};
-        }
-      }
+        },
+      },
+      videoSrc: {
+          type: String,
+          required: true,
+          default() {
+            return {};
+          },
+        },
+
     },
     data() {
       return {
@@ -21,10 +29,14 @@
     },
     mounted() {
       const playerElement = this.$refs.player;
-  
+
       // Khởi tạo trình phát JWPlayer
       this.player = jwplayer(playerElement);
-      
+      const playerOptions = {
+        file: this.videoSrc,
+        ... this.options,
+        
+      }
       // Thiết lập cấu hình cho trình phát video
       // player.setup({
       //   file: "pngs/test.m3u8",
@@ -32,12 +44,18 @@
       //   heigh: 360,
       //   width: 640
       // });
-      this.player.setup(this.options)
+      this.player.setup(playerOptions)
     },
     watch: {
-      options(options){
-        this.player.setup(options)
+      options() {
+        const playerOptions = {
+        file: this.videoSrc,
+        ... this.options,
+        
+      }
+        this.player.setup(playerOptions)
       }
     }
+
   }
   </script>
